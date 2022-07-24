@@ -1,0 +1,156 @@
+.order {
+
+	.container {
+		@include mq("568") {
+			padding: 0 7px;
+		}
+	}
+
+	&__inner {
+		border: 1px solid $accent;
+		border-radius: 8px;
+		padding: 45px;
+		display: flex;
+		justify-content: space-between;
+
+		@include mq("998") {
+			padding: 40px;
+		}
+
+		@include mq("758") {
+			padding: 35px;
+		}
+
+		@include mq("568") {
+			padding: 25px;
+		}
+	}
+
+	&__form {
+		margin-right: 30px;
+		width: 100%;
+		flex: 0 1 100%;
+
+		@include mq("998") {
+			margin: 0;
+		}
+	}
+
+	&__form-list {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-bottom: 20px;
+		width: 100%;
+
+		@include mq("568") {
+			gap: 10px;
+			margin-bottom: 12px;
+		}
+
+		textarea {
+			height: 220px;
+			resize: none;
+
+			@include mq("758") {
+				height: 150px;
+			}
+
+			@include mq("568") {
+				height: 110px;
+			}
+		}
+	}
+
+	&__form-item {
+		width: 100%;
+		padding: 12px;
+		border: 1px solid $accent;
+		border-radius: 8px;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 27px;
+
+		@include mq("568") {
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+
+	&__form-btns {
+		display: flex;
+		gap: 30px;
+
+		@include mq("568") {
+			flex-direction: column;
+			gap: 15px;
+		}
+	}
+
+	&__form-file {
+		border: none;
+		background-color: transparent;
+		outline: none;
+	}
+
+	&__form-label {
+		border: 2px solid $accent;
+		padding: 13px;
+		border-radius: 7px;
+		color: $accent;
+		width: 100%;
+		text-align: center;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 33px;
+		cursor: pointer;
+
+		@include mq("758") {
+			font-size: 18px;
+		}
+
+		@include mq("568") {
+			font-size: 16px;
+			padding: 9px;
+		}
+
+	}
+
+	&__form-btn {
+		border-radius: 7px;
+		background-color: $accent;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 33px;
+		color: #FFFFFF;
+		border-radius: 7px;
+		padding: 13px;
+		width: 100%;
+
+		@include mq("758") {
+			font-size: 18px;
+		}
+
+		@include mq("568") {
+			font-size: 16px;
+			padding: 9px;
+		}
+	}
+
+	&__img {
+		border-radius: 7px;
+		flex: 0 1 50%;
+
+		@include mq("998") {
+			display: none;
+		}
+
+		img {
+			height: 457px;
+			max-width: 390px;
+			width: 100%;
+			object-fit: cover;
+			border-radius: 7px;
+		}
+	}
+}

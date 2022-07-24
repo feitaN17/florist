@@ -1,0 +1,56 @@
+.discount {
+
+	.container {
+		padding: 0 50px;
+
+		@include mq("758") {
+			padding: 0 15px;
+		}
+
+		@include mq("568") {
+			padding: 0 7px;
+		}
+	}
+
+	&__slider {
+		position: relative;
+	}
+}
+
+.discount-swiper {
+
+	&__slide {
+		height: 100%;
+
+		.product-card {
+
+			img {
+				@include mq("568") {
+					height: 97px;
+				}
+			}
+		}
+
+	}
+
+	&__nav {
+		@include mq("758") {
+			display: none;
+		}
+	}
+
+	&__prev {
+		left: -50px;
+		color: $black;
+	}
+
+	&__next {
+		right: -50px;
+		color: $black;
+	}
+}
+
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+	height: 100%;
+}

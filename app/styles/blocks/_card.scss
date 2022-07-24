@@ -1,0 +1,41 @@
+.card {
+	&__inner {
+		display: flex;
+		gap: 30px;
+	}
+
+	&__gallery {}
+
+	&__gallery-top {
+		margin-bottom: 25px;
+	}
+
+	&__gallary-bot {
+		display: flex;
+		gap: 30px;
+	}
+
+	&__desk {}
+
+	&__desk-width {}
+
+	&__desk-height {}
+
+	&__content {}
+
+	&__title {}
+
+	&__price {}
+
+	&__form {}
+
+	&__info {}
+
+	&__list {}
+
+	&__item {}
+}
+
+.container {}
+
+.btn {}

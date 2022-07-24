@@ -1,0 +1,399 @@
+.header {
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		padding: 35px 0;
+	}
+
+	&__top {
+		font-size: 14px;
+		display: flex;
+		justify-content: space-between;
+
+		@include mq("998") {
+			display: none;
+		}
+	}
+
+	&__top-list {
+		display: flex;
+		gap: 50px;
+	}
+
+	&__middle {
+		margin-bottom: 30px;
+
+		@include mq("998") {
+			background: linear-gradient(180deg, #66CA5D 0%, #3F9737 100%);
+			padding: 10px 0;
+		}
+
+		@include mq("998") {
+			margin-bottom: 20px;
+		}
+
+		@include mq("758") {
+			margin-bottom: 10px;
+		}
+
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include mq("998") {
+			justify-content: flex-start;
+		}
+	}
+
+	&__info {
+		display: flex;
+		gap: 100px;
+
+		@include mq("998") {
+			display: none;
+		}
+	}
+
+	&__item {
+		color: #898989;
+
+		div {
+			margin-bottom: 3px;
+		}
+
+		span {
+			color: $black;
+			font-size: 18px;
+			font-weight: 500;
+		}
+
+		a {
+			color: $accent;
+			font-size: 18px;
+			font-weight: 500;
+			padding-left: 30px;
+			position: relative;
+
+			&::before {
+				@include pseudo;
+				width: 22px;
+				height: 22px;
+				background-image: url('../images/icons/icon-phone.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center center;
+				left: 0;
+				top: 4px;
+			}
+		}
+	}
+
+	&__contact {
+		display: none;
+
+		@include mq("998") {
+			display: block;
+			margin-bottom: 30px;
+		}
+
+		@include mq("758") {
+			margin-bottom: 20px;
+		}
+
+		@include mq("568") {
+			margin-bottom: 10px;
+
+			.container {
+				padding: 0 7px;
+			}
+		}
+	}
+
+	&__contact-inner {
+		border: 1px solid $accent;
+		padding: 5px 10px;
+		display: flex;
+		justify-content: space-between;
+		gap: 35px;
+
+		@include mq("568") {
+			gap: 17px;
+		}
+	}
+
+	&__dilivery {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 19px;
+		color: #627866;
+		max-width: 180px;
+
+		@include mq("568") {
+			font-size: 14px;
+			max-width: 136px;
+		}
+
+		span {
+			padding-right: 20px;
+			position: relative;
+			display: block;
+
+			&::after {
+				content: '';
+				position: absolute;
+				background-image: url('../images/icons/icon-time.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				width: 18px;
+				height: 33px;
+				right: 0;
+				top: 3px;
+			}
+		}
+	}
+
+	&__phones {
+		font-weight: 500;
+		line-height: 19px;
+		font-size: 18px;
+		color: #203224;
+		display: flex;
+		flex-direction: column;
+
+		@include mq("568") {
+
+			font-size: 14px;
+		}
+	}
+}
+
+.menu {
+	margin-bottom: 20px;
+	color: $white;
+
+	@include mq("998") {
+		display: none;
+	}
+
+	&__login {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 17px;
+		margin-bottom: 5px;
+	}
+
+	&__list {
+		justify-content: space-between;
+		align-items: center;
+		display: flex;
+		gap: 30px;
+		background: linear-gradient(180deg, #55B74C 0%, #4BA043 162.75%);
+		border-radius: 7px;
+		padding: 13px 33px;
+
+		@include mq("998") {
+			flex-direction: column;
+			background: transparent;
+			padding: 0;
+			gap: 0;
+		}
+	}
+
+	&__item {
+
+		@include mq("998") {
+			border-bottom: 1px solid #fff;
+			width: 100%;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 19px;
+			color: #FFFFFF;
+		}
+	}
+
+	&__link {
+
+		@include mq("998") {
+			padding: 10px 15px;
+			display: block;
+
+		}
+	}
+
+	&-burger {
+		@include mq("998") {
+			display: block;
+			color: $black;
+		}
+	}
+
+}
+
+.login {
+	color: $accent;
+	padding-right: 30px;
+	position: relative;
+
+	@include mq("998") {
+		color: $white;
+	}
+
+	&::after {
+		@include pseudo;
+		right: 0;
+		top: 0;
+		width: 20px;
+		height: 20px;
+		background-image: url('../images/icons/icon-login.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+
+		filter: invert(29%) sepia(7%) saturate(3000%) hue-rotate(68deg) brightness(83%) contrast(110%);
+
+		@include mq("998") {
+			filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(183deg) brightness(104%) contrast(102%);
+		}
+	}
+}
+
+.user-nav {
+
+	&__list {
+		display: flex;
+		gap: 20px;
+
+		@include mq("758") {
+			gap: 10px;
+		}
+	}
+
+	&__item {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 30px;
+		height: 30px;
+	}
+
+	&__btn {
+		position: absolute;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		width: 29px;
+		height: 29px;
+		filter: invert(39%) sepia(8%) saturate(3313%) hue-rotate(68deg) brightness(104%) contrast(75%);
+
+		@include mq("998") {
+			filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(178deg) brightness(105%) contrast(102%);
+		}
+
+		@include mq("568") {
+			width: 24px;
+			height: 24px;
+		}
+	}
+}
+
+.burger {
+
+	&-menu {
+		display: none;
+
+		@include mq("998") {
+			position: fixed;
+			top: 0;
+			left: 0;
+			overflow-y: auto;
+			z-index: 20;
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+			width: 90%;
+			height: 100%;
+			background: linear-gradient(180deg, #56C54B 17.51%, #286622 100%);
+			visibility: hidden;
+			transform: translateX(-100%);
+			transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+		}
+
+		&--active {
+			visibility: visible;
+			transform: translateX(0);
+		}
+	}
+
+	&-btn {
+		display: none;
+
+		@include mq("998") {
+			display: block;
+			position: relative;
+			z-index: 20;
+			min-width: 30px;
+			height: 24px;
+			margin-right: 35px;
+		}
+
+		&__line,
+		&::before,
+		&::after {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: $white;
+			border-radius: 2px;
+			transition: transform .3s ease-in-out, top .3s ease-in-out, background-color .3s ease-in-out;
+		}
+
+		&::before,
+		&::after {
+			content: '';
+		}
+
+		&__line {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&::after {
+			top: 100%;
+			transform: translateY(-50%);
+		}
+
+		&--active {
+
+			.burger-btn__line,
+			&::before,
+			&::after {
+				background-color: rgba($white, .9);
+			}
+
+			.burger-btn__line {
+				transform: translateY(-50%) scale(0);
+			}
+
+			&::before {
+				top: 50%;
+				transform: translateY(-50%) rotate(45deg);
+			}
+
+			&::after {
+				top: 50%;
+				transform: translateY(-50%) rotate(-45deg);
+			}
+		}
+	}
+}
