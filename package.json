@@ -44,6 +44,7 @@
 	},
 	"dependencies": {
 		"@fancyapps/fancybox": "^3.5.7",
+		"@rateyo/jquery": "^3.0.0-alpha.2",
 		"jquery": "^3.6.0",
 		"micromodal": "^0.4.10",
 		"swiper": "^8.3.0"

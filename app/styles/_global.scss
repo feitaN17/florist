@@ -1,7 +1,6 @@
 body {
 	font-family: "Manrope", "Arial", sans-serif;
 	font-size: 18px;
-	background-color: #e5e5e5;
 	color: $black;
 	min-width: 320px;
 	overflow-x: hidden;
@@ -28,6 +27,11 @@ section {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	background-color: #e5e5e5;
+
+	&--card {
+		background-color: #fff;
+	}
 }
 
 .main {
@@ -60,6 +64,10 @@ section {
 
 	@include mq("568") {
 		padding: 0 7px;
+	}
+
+	&--reviews {
+		max-width: 1440px;
 	}
 }
 

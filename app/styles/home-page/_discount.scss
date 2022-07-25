@@ -48,6 +48,11 @@
 		right: -50px;
 		color: $black;
 	}
+
+	&__prev::after,
+	&__next::after {
+		font-size: 28px;
+	}
 }
 
 .swiper-autoheight,

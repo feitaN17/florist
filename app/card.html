@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper wrapper--card">
 		<header class="header">
 	<div class="header__top">
 		<div class="container">
@@ -224,7 +224,10 @@
 						<a class="breadcrumbs__link breadcrumbs__link--home" href="index.html"></a>
 					</li>
 					<li class="breadcrumbs__item">
-						<a class="breadcrumbs__link" href="#">Товар</a>
+						<a class="breadcrumbs__link" href="flowers.html">Цветы</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="#">Корзина фиолетовых роз</a>
 					</li>
 				</ul>
 			</div>
@@ -233,6 +236,8 @@
 		<main class="main">
 			<section class="card">
 	<div class="container">
+
+		<h1 class="sr-only">Карточка товара</h1>
 
 		<div class="card__inner">
 
@@ -258,7 +263,7 @@
 				<div class="card__desk">
 
 					<span>
-						Размер: <span class="card__desk-width">60</span> <span class="card__desk-height">40</span>
+						Размер: <span class="card__desk-width">60 см</span> <span class="card__desk-height">40 см</span>
 					</span>
 
 				</div>
@@ -270,31 +275,40 @@
 				</h1>
 
 				<div class="card__price">
-					<span>1500</span> <span>2500</span>
+					<span>1500 ₽</span> <span>2500 ₽</span>
 				</div>
 
 				<form class="card__form" action="#">
-					<label for="quantity-select">Количество</label>
-					<select name="quantity" id="quantity-select">
-						<option value="">15 шт - 1500 руб.</option>
-						<option value="">20 шт - 2500 руб.</option>
-						<option value="">25 шт - 3500 руб.</option>
-					</select>
+					<div class="card__form-item">
+						<label for="quantity-select">Количество</label>
+						<select name="quantity" id="quantity-select">
+							<option value="">15 шт - 1500 руб.</option>
+							<option value="20">20 шт - 2500 руб.</option>
+							<option value="25">25 шт - 3500 руб.</option>
+						</select>
+					</div>
 
-					<label for="color-select">Количество</label>
-					<select name="color" id="color-select">
-						<option value="">Фиолетовый</option>
-						<option value="">Красный</option>
-						<option value="">Белый</option>
-					</select>
 
-					<label for="decor-select">Количество</label>
-					<select name="decor" id="decor-select">
-						<option value="">Прозрачная упаковка - 0р.</option>
-						<option value="">Цветная упаковка - 100р.</option>
-					</select>
+					<div class="card__form-item">
+						<label for="color-select">Цвет</label>
+						<select name="color" id="color-select">
+							<option value="">Фиолетовый</option>
+							<option value="red">Красный</option>
+							<option value="white">Белый</option>
+						</select>
+					</div>
 
-					<button class="btn" type="button">В корзину</button>
+
+					<div class="card__form-item">
+						<label for="decor-select">Оформление</label>
+						<select name="decor" id="decor-select">
+							<option value="">Прозрачная упаковка - 0р.</option>
+							<option value="100">Цветная упаковка - 100р.</option>
+						</select>
+					</div>
+
+
+					<button class="btn" type="button">Добавить в корзину</button>
 				</form>
 
 				<div class="card__info">
@@ -347,6 +361,214 @@
 
 		</div>
 	</div>
+
+	<div class="reviews">
+		<div class="container">
+			<div class="reviews__top">
+				<h2 class="reviews__title">Отзывы <span>(3)</span></h2>
+				<div class="star" data-rateyo-rating="4"></div>
+				<button class="reviews__btn" type="button">Написать отзыв</button>
+			</div>
+		</div>
+
+		<div class="container container--reviews">
+			<div class="reviews__slider">
+				<div class="reviews-swiper">
+					<ul class="reviews-swiper__wrapper swiper-wrapper">
+						<li class="reviews-swiper__slide swiper-slide">
+
+							<h3 class="reviews-swiper__name">Алексей</h3>
+
+							<p class="reviews-swiper__text">
+								Выберете наиболее удачное место для расположения вазы с цветами или композиции. Идеальное место- прохладное, с притоком есто- прохладное, с прит свежего воздуха, вдали от
+								прямых солнечных
+								лучей,
+								сквозняков,
+								обогревательных приборов, фруктов и овощей.
+							</p>
+
+						</li>
+						<li class="reviews-swiper__slide swiper-slide">
+
+							<h3 class="reviews-swiper__name">Алексей</h3>
+
+							<p class="reviews-swiper__text">
+								Выберете наиболее удачное место для расположения вазы с цветами или композиции. Идеальное место- прохладное, с притоком есто- прохладное, с прит свежего воздуха, вдали от
+								прямых солнечных
+								лучей,
+								сквозняков,
+								обогревательных приборов, фруктов и овощей.
+							</p>
+
+						</li>
+						<li class="reviews-swiper__slide swiper-slide">
+
+							<h3 class="reviews-swiper__name">Алексей</h3>
+
+							<p class="reviews-swiper__text">
+								Выберете наиболее удачное место для расположения вазы с цветами или композиции. Идеальное место- прохладное, с притоком есто- прохладное, с прит свежего воздуха, вдали от
+								прямых солнечных
+								лучей,
+								сквозняков,
+								обогревательных приборов, фруктов и овощей.
+							</p>
+
+						</li>
+					</ul>
+				</div>
+
+				<div class="reviews-swiper__nav">
+					<div class="swiper-button-prev reviews-swiper__prev"></div>
+					<div class="swiper-button-next reviews-swiper__next"></div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="discount">
+		<div class="container">
+			<h2 class="title">
+				<span>С этим товаром покупают:</span>
+			</h2>
+			<div class="discount__slider">
+
+				<div class="discount-swiper swiper">
+
+					<ul class="discount-swiper__wrapper swiper-wrapper">
+
+						<li class="discount-swiper__slide swiper-slide">
+
+							<article class="product-card">
+								<div class="product-card__top">
+									<a class="product-card__link" href="flowers.html">
+										<img src="images/discount/flowers.jpg" alt="Изображение цветов">
+									</a>
+									<h3 class="product-card__title">
+										Корзинка роз
+									</h3>
+								</div>
+
+								<div class="product-card__bottom">
+									<div class="product-card__price">
+										<span>150 <span class="product-card__cur">₽</span></span>
+
+										<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+									</div>
+									<button class="btn" type="button" data-micromodal-open="modal-1">В корзину</button>
+								</div>
+							</article>
+
+						</li>
+						<li class="discount-swiper__slide swiper-slide">
+
+							<article class="product-card">
+								<div class="product-card__top">
+									<a class="product-card__link" href="flowers.html">
+										<img src="images/discount/flowers.jpg" alt="Изображение цветов">
+									</a>
+									<h3 class="product-card__title">
+										Корзинка роз
+									</h3>
+								</div>
+
+								<div class="product-card__bottom">
+									<div class="product-card__price">
+										<span>150 <span class="product-card__cur">₽</span></span>
+
+										<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+									</div>
+									<button class="btn" type="button" data-micromodal-open="modal-1">В корзину</button>
+								</div>
+							</article>
+
+						</li>
+						<li class="discount-swiper__slide swiper-slide">
+
+							<article class="product-card">
+								<div class="product-card__top">
+									<a class="product-card__link" href="flowers.html">
+										<img src="images/discount/flowers.jpg" alt="Изображение цветов">
+									</a>
+									<h3 class="product-card__title">
+										Корзинка роз
+									</h3>
+								</div>
+
+								<div class="product-card__bottom">
+									<div class="product-card__price">
+										<span>150 <span class="product-card__cur">₽</span></span>
+
+										<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+									</div>
+									<button class="btn" type="button" data-micromodal-open="modal-1">В корзину</button>
+								</div>
+							</article>
+
+						</li>
+						<li class="discount-swiper__slide swiper-slide">
+
+							<article class="product-card">
+								<div class="product-card__top">
+									<a class="product-card__link" href="flowers.html">
+										<img src="images/discount/flowers.jpg" alt="Изображение цветов">
+									</a>
+									<h3 class="product-card__title">
+										Корзинка роз
+									</h3>
+								</div>
+
+								<div class="product-card__bottom">
+									<div class="product-card__price">
+										<span>150 <span class="product-card__cur">₽</span></span>
+
+										<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+									</div>
+									<button class="btn" type="button" data-micromodal-open="modal-1">В корзину</button>
+								</div>
+							</article>
+
+						</li>
+						<li class="discount-swiper__slide swiper-slide">
+
+							<article class="product-card">
+								<div class="product-card__top">
+									<a class="product-card__link" href="flowers.html">
+										<img src="images/discount/flowers.jpg" alt="Изображение цветов">
+									</a>
+									<h3 class="product-card__title">
+										Корзинка роз
+									</h3>
+								</div>
+
+								<div class="product-card__bottom">
+									<div class="product-card__price">
+										<span>150 <span class="product-card__cur">₽</span></span>
+
+										<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+									</div>
+									<button class="btn" type="button" data-micromodal-open="modal-1">В корзину</button>
+								</div>
+							</article>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+				<div class="discount-swiper__nav">
+					<div class="swiper-button-prev discount-swiper__prev"></div>
+					<div class="swiper-button-next discount-swiper__next"></div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
 </section>
 		</main>
 

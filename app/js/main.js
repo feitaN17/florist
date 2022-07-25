@@ -2,9 +2,18 @@ import { Swiper, Navigation } from 'swiper'
 Swiper.use([Navigation])
 
 import MicroModal from 'micromodal'
-import { Fancybox } from '@fancyapps/fancybox'
+import Fancybox from '@fancyapps/fancybox'
+import rateYo from '@rateyo/jquery/lib/es/jquery.rateyo.js'
 
 document.addEventListener('DOMContentLoaded', () => {
+	$('.star').rateYo({
+		starWidth: '34px',
+		readOnly: true,
+		spacing: '10px',
+		normalFill: '#C1C1C1',
+		ratedFill: '#55B74C',
+	})
+
 	MicroModal.init({
 		openTrigger: 'data-micromodal-open',
 		closeTrigger: 'data-micromodal-close',
@@ -13,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		awaitOpenAnimation: true,
 		awaitCloseAnimation: true,
 	})
+
 	function accordion() {
 		const items = document.querySelectorAll('.accordion__item-trigger')
 		items.forEach((item) => {
@@ -28,6 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	}
 	accordion()
+
+	const reviewsSwiper = new Swiper('.reviews-swiper', {
+		loop: false,
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	})
 
 	const swiper = new Swiper('.swiper', {
 		autoHeight: true,
