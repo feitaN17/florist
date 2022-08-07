@@ -66,6 +66,13 @@
 
 	&__desk {
 		opacity: .5;
+		font-size: 16px;
+
+		&--cart {
+			@include mq("568") {
+				font-size: 12px;
+			}
+		}
 	}
 
 	&__desk-width {

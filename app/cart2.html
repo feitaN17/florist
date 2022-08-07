@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>FLORIST | Услуги</title>
+	<title>FLORIST | Оформление заказа</title>
 	<link rel="icon" type="image/x-icon" href="images/favicon.svg">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg">
 	<link rel="stylesheet" href="css/style.min.css">
@@ -226,102 +226,226 @@
 						<a class="breadcrumbs__link breadcrumbs__link--home" href="index.html"></a>
 					</li>
 					<li class="breadcrumbs__item">
-						<a class="breadcrumbs__link" href="#">Услуги</a>
+						<a class="breadcrumbs__link" href="#">Корзина</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="#">оформление заказа</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 
 		<main class="main">
-			<section class="product-page">
+			<section class="cart cart-next">
 	<div class="container">
-		<h2 class="sr-only">Услуги</h2>
-		<ul class="pagelist">
-			<li class="pagelist__item">
-				<article class="product-card">
-					<div class="product-card__top">
-						<a class="product-card__link" href="card.html">
-							<img src="images/services/service-7.jpg" alt="Изображение цветов">
-						</a>
-						<h3 class="product-card__title">
-							Услуга
-						</h3>
+		<h1 class="sr-only">Корзина</h1>
+
+		<div class="cart__stages cart-stages">
+
+			<ul class="cart-stages__list cart-stages__list--pos">
+				<li class="cart-stages__item active active--none">
+					Корзина
+				</li>
+				<li class="cart-stages__item active">
+					Оформление заказа
+				</li>
+				<li class="cart-stages__item">
+					Оплата
+				</li>
+			</ul>
+
+			<ul class="cart-stages__list cart-stages__list--points">
+				<li class="cart-stages__item-point active">
+					<span>1</span>
+				</li>
+				<li class="cart-stages__item-point active">
+					<span>2</span>
+				</li>
+				<li class="cart-stages__item-point">
+					<span>3</span>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="order">
+
+			<span>Ваш заказ</span> в <span class="order__city">г. Москва</span> с доставкой на сумму <span>1500₽</span>
+
+		</div>
+
+		<div class="cart__inner cart-next__inner">
+			<div class="cart__item">
+				<img src="images/discount/flowers-w.jpg" alt="Изобрадение цветов">
+
+				<div class="cart__item-inner cart-next__item-inner">
+
+					<div class="cart__item-about">
+						<h2 class="cart__item-title">Корзина фиолетовых роз</h2>
 					</div>
 
-					<div class="product-card__bottom">
-						<div class="product-card__price">
-							<span>150 <span class="product-card__cur">₽</span></span>
+					<div class="cart__price">
+						<span>1 500<span>₽</span></span>
+					</div>
 
-							<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+				</div>
+
+			</div>
+
+		</div>
+
+		<form class="cart-info__form cart-next__check" action="#">
+
+			<div class="cart-info__form-item">
+				<label class="cart-info__label cart-info__label--image">
+					<input name="check" type="checkbox">
+					<span>Добавьте открытку - бесплатно!</span>
+				</label>
+			</div>
+
+			<div class="cart-info__form-item">
+				<label class="cart-info__label">
+					<input name="check" type="checkbox">
+					<span>Фото при получаении - бесплатно!</span>
+				</label>
+			</div>
+
+			<div class="cart-info__form-item">
+				<label class="cart-info__label">
+					<input name="check" type="checkbox">
+					<span>Фото букета до доставки - бесплатно!</span>
+				</label>
+			</div>
+
+		</form>
+
+
+		<div class="cart-next__content">
+			<div class="cart-next__list">
+
+				<div class="cart-next__item">
+
+					<div class="cart-next__item-title">
+						<h2>Отправитель</h2>
+
+						<form action="#">
+							<label>
+								<input type="checkbox">
+								<span>Я сам получу заказ</span>
+							</label>
+						</form>
+					</div>
+
+					<form class="cart-next__form" action="#">
+						<div class="cart-next__form-item cart-next__form-item--tel">
+							<input class="cart-next__form-field" type="tel" placeholder="Ваше телефон*">
 						</div>
-						<button class="btn" type="button">В корзину</button>
-					</div>
-				</article>
-			</li>
-			<li class="pagelist__item">
-				<article class="product-card">
-					<div class="product-card__top">
-						<a class="product-card__link" href="card.html">
-							<img src="images/services/service-7.jpg" alt="Изображение цветов">
-						</a>
-						<h3 class="product-card__title">
-							Услуга
-						</h3>
-					</div>
 
-					<div class="product-card__bottom">
-						<div class="product-card__price">
-							<span>150 <span class="product-card__cur">₽</span></span>
-
-							<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+						<div class="cart-next__form-item cart-next__form-item--mail">
+							<input class="cart-next__form-field" type="email" placeholder="Ваш e-mail">
 						</div>
-						<button class="btn" type="button">В корзину</button>
-					</div>
-				</article>
-			</li>
-			<li class="pagelist__item">
-				<article class="product-card">
-					<div class="product-card__top">
-						<a class="product-card__link" href="card.html">
-							<img src="images/services/service-7.jpg" alt="Изображение цветов">
-						</a>
-						<h3 class="product-card__title">
-							Услуга
-						</h3>
-					</div>
 
-					<div class="product-card__bottom">
-						<div class="product-card__price">
-							<span>150 <span class="product-card__cur">₽</span></span>
-
-							<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+						<div class="cart-next__form-item cart-next__form-item--name">
+							<input class="cart-next__form-field" type="text" placeholder="Ваше имя">
 						</div>
-						<button class="btn" type="button">В корзину</button>
-					</div>
-				</article>
-			</li>
-			<li class="pagelist__item">
-				<article class="product-card">
-					<div class="product-card__top">
-						<a class="product-card__link" href="card.html">
-							<img src="images/services/service-7.jpg" alt="Изображение цветов">
-						</a>
-						<h3 class="product-card__title">
-							Услуга
-						</h3>
+					</form>
+				</div>
+
+				<div class="cart-next__item">
+
+					<div class="cart-next__item-title">
+
+						<h2>ПОЛУЧАТЕЛЬ</h2>
+
 					</div>
 
-					<div class="product-card__bottom">
-						<div class="product-card__price">
-							<span>150 <span class="product-card__cur">₽</span></span>
-
-							<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+					<form class="cart-next__form" action="#">
+						<div class="cart-next__form-item cart-next__form-item--name">
+							<input class="cart-next__form-field" type="tel" placeholder="Фамилия Имя Отчество">
 						</div>
-						<button class="btn" type="button">В корзину</button>
+
+						<div class="cart-next__form-item cart-next__form-item--tel">
+							<input class="cart-next__form-field" type="tel" placeholder="Телефон получателя">
+						</div>
+
+						<div class="cart-next__form-item cart-next__form-item--down">
+							<input class="cart-next__form-field" type="text" placeholder="Уточнить адрес и время доставки">
+						</div>
+					</form>
+
+					<div class="cart-next__item-text">
+						<p>Мы позвоним получателю и уточним удобное время и адрес доставки. При звонке мы не скажем про цветы. Приоритетным будет время и адрес доставки, которые сообщит нам получатель.</p>
 					</div>
-				</article>
-			</li>
-		</ul>
+				</div>
+
+				<div class="cart-next__item">
+
+					<div class="cart-next__item-title">
+						<h2>ДАТА И ВРЕМЯ ДОСТАВКИ</h2>
+					</div>
+
+					<form class="cart-next__form" action="#">
+						<div class="cart-next__form-item cart-next__form-item--date">
+							<span>Дата доставки</span>
+							<input id="starttdate" class="cart-next__form-field" type="date">
+						</div>
+
+						<div class="cart-next__form-item cart-next__form-item--time">
+							<span>Время доставки</span>
+							<input class="cart-next__form-field" type="time">
+						</div>
+
+						<div class="cart-next__form-item">
+							<label>
+								<input type="checkbox">
+								<span>В течение 3-х часов после оплаты заказа</span>
+							</label>
+
+						</div>
+					</form>
+				</div>
+
+				<div class="cart-next__item">
+
+					<div class="cart-next__item-title cart-next__item-title--gap">
+						<h2>АДРЕС ДОСТАВКИ (+ ВАШИ ПОЖЕЛАНИЯ К ЗАКАЗУ)</h2>
+					</div>
+
+					<form class="cart-next__form cart-next__form" action="#">
+						<div class="cart-next__form-item cart-next__form-item--city">
+							<span>Москва</span>
+							<input class="cart-next__form-field" type="text" placeholder="Город, адрес доставки">
+						</div>
+
+						<div class="cart-next__form-item cart-next__form-item--width">
+							<label>
+								<input type="checkbox">
+								<span>Узнать адрес доставки
+									у получателя</span>
+							</label>
+
+							<label>
+								<input type="checkbox">
+								<span>Бесконтактная доставка</span>
+							</label>
+
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+			<div class="cart-next__btns">
+				<a class="btn btn--bg" href="cart.html">Вернуться в корзину</a>
+
+				<a class="btn" href="#">Перейти к оплате</a>
+
+				<p>Нажимая кнопку "Перейти к оплате", вы соглашаетесь с правилами <span>Политики конфиденциальности</span></p>
+			</div>
+		</div>
+
+
+
 	</div>
 </section>
 		</main>

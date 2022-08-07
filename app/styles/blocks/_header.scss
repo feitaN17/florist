@@ -145,7 +145,7 @@
 			&::after {
 				content: '';
 				position: absolute;
-				background-image: url('../images/icons/icon-time.svg');
+				background-image: url('../images/icons/icon-timer.svg');
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center;
@@ -195,6 +195,7 @@
 		background: linear-gradient(180deg, #55B74C 0%, #4BA043 162.75%);
 		border-radius: 7px;
 		padding: 13px 33px;
+		overflow: auto;
 
 		@include mq("998") {
 			flex-direction: column;
@@ -213,6 +214,14 @@
 			font-size: 14px;
 			line-height: 19px;
 			color: #FFFFFF;
+		}
+
+		a {
+			white-space: nowrap;
+
+			@include mq("998") {
+				white-space: normal;
+			}
 		}
 	}
 
