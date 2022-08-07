@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FLORIST | Корзинки</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.svg">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.svg">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="wrapper wrapper--card">
+		<header class="header">
+	<div class="header__top">
+		<div class="container">
+			<div class="header__inner">
+				<ul class="header__top-list">
+					<li class="header__top-item">
+						<a href="#">Контакты</a>
+					</li>
+					<li class="header__top-item">
+						<a href="#">О нас</a>
+					</li>
+					<li class="header__top-item">
+						<a href="#">Доставка</a>
+					</li>
+					<li class="header__top-item">
+						<a href="#">Политика безопасности</a>
+					</li>
+					<li class="header__top-item">
+						<a href="#">Условия соглашения</a>
+					</li>
+				</ul>
+				<a class="login" href="#">Личный кабинет</a>
+			</div>
+
+		</div>
+	</div>
+	<div class="header__middle">
+		<div class="container header__container">
+
+			<button class="burger-btn">
+				<span class="burger-btn__line"></span>
+			</button>
+
+			<a class="logo" href="index.html">
+				<img src="./images/logo.svg" alt="Логотип">
+			</a>
+
+			<div class="header__info">
+
+				<address class="header__item">
+					<div>Адрес магазина</div>
+					<span>г. Москва</span>
+				</address>
+
+				<div class="header__item">
+					<div>Главный офис</div>
+					<a href="tel:79687657007">
+						+7 968 765-70-07
+					</a>
+				</div>
+
+			</div>
+
+			<div class="user-nav">
+				<ul class="user-nav__list">
+					<li class="user-nav__item">
+						<button class="user-nav__btn search-btn" type="button" style="background-image: url('images/icons/icon-search.svg');"></button>
+					</li>
+					<li class="user-nav__item">
+						<a class="user-nav__btn cart-btn" href="cart.html" style="background-image: url('images/icons/icon-bag.svg');"></a>
+					</li>
+					<li class="user-nav__item">
+						<a class="user-nav__btn fav-btn" href="#" style="background-image: url('images/icons/icon-heart.svg');"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="overlay"></div>
+
+			<div class="burger-menu">
+				<nav class="menu menu-burger">
+					<a class="logo logo--menu" href="index.html">
+						<img src="./images/logo.svg" alt="Логотип">
+					</a>
+
+					<div class="menu__login">
+						<a class="login" href="#">Войти</a>
+					</div>
+
+					<ul class="menu__list menu__list-burger">
+						<li class="menu__item">
+							<a class="menu__link" href="flowers.html">Цветы</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="presents.html">Подарки</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="fruits.html">Фруктовые корзины</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="ballons.html">Воздушные шарики</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="homeflow.html">Комнатные растения</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="sweets.html">Сладости</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="services.html">Услуги</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="accessories.html">Аксессуары</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">О нас</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Доставка</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Политика безопасности</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Условия соглашения</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div class="header__contact">
+		<div class="container">
+			<div class="header__contact-inner">
+				<div class="header__dilivery">
+					<span>Доставка цветов
+						по Москве и МО</span>
+				</div>
+
+				<div class="header__phones">
+					<a href="tel:79657657007">+7 965 765-70-07</a>
+					<a href="tel:79657657007">+7 965 765-70-07</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="menu">
+		<div class="container">
+			<ul class="menu__list">
+				<li class="menu__item">
+					<a class="menu__link" href="flowers.html">Цветы</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="presents.html">Подарки</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="fruits.html">Фруктовые корзины</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="ballons.html">Воздушные шарики</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="homeflow.html">Комнатные растения</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="sweets.html">Сладости</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="services.html">Услуги</a>
+				</li>
+				<li class="menu__item">
+					<a class="menu__link" href="accessories.html">Аксессуары</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+
+		<!-- [2] -->
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+
+			<!-- [3] -->
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+
+
+				<div class="modal__header">
+					<h2 class="modal__title" id="modal-1-title">
+						Оставить заявку
+					</h2>
+
+					<!-- [4] -->
+					<button class="modal__close" aria-label="Закрыть окно" data-micromodal-close></button>
+				</div>
+
+				<form action="#">
+
+					<div class="modal__content">
+						<input class="form-input modal__input" type="text" name="VH-name" placeholder="Ваше имя..." required>
+						<input class="form-input modal__input phone-mask" type="tel" name="VH-phone" placeholder="+7(___)___-__-__" required>
+						<textarea class="form-input modal__textarea" name="massage" placeholder="Укажите здесь какую вы хотели бы услугу..." required></textarea>
+					</div>
+
+					<div class="modal__footer">
+						<button class="button" type="submit"><span>Отправить</span></button>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+</header>
+
+		<div class="breadcrumbs">
+			<div class="container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link breadcrumbs__link--home" href="index.html"></a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="flowers.html">Цветы</a>
+					</li>
+					<li class="breadcrumbs__item">
+						<a class="breadcrumbs__link" href="#">Корзина фиолетовых роз</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<main class="main">
+			<section class="card">
+	<div class="container">
+
+		<h1 class="sr-only">Карточка товара</h1>
+
+		<div class="card__inner">
+
+			<div class="card__gallery">
+				<div class="card__gallery-top">
+					<a href="#" data-fancybox="images" data-src="images/card/card-img.jpg">
+						<img src="images/card/card-img.jpg" alt="Изображение продукта">
+					</a>
+				</div>
+
+				<div class="card__gallary-bot">
+					<a href="#" data-fancybox="images" data-src="images/card/card-img.jpg">
+						<img src="images/card/card-img.jpg" alt="Изображение продукта">
+					</a>
+					<a href="#" data-fancybox="images" data-src="images/card/card-img.jpg">
+						<img src="images/card/card-img.jpg" alt="Изображение продукта">
+					</a>
+					<a href="#" data-fancybox="images" data-src="images/card/card-img.jpg">
+						<img src="images/card/card-img.jpg" alt="Изображение продукта">
+					</a>
+				</div>
+
+				<div class="card__desk">
+
+					<span>
+						Размер: <span class="card__desk-width">60 см</span> <span class="card__desk-height">40 см</span>
+					</span>
+
+				</div>
+			</div>
+
+			<div class="card__content">
+				<h1 class="card__title">
+					Корзина фиолетовых роз
+				</h1>
+
+				<div class="card__price">
+					<span>1500 ₽</span> <span>2500 ₽</span>
+				</div>
+
+				<form class="card__form" action="#">
+					<div class="card__form-item">
+						<label for="quantity-select">Количество</label>
+						<select name="quantity" id="quantity-select">
+							<option value="">15 шт - 1500 руб.</option>
+							<option value="20">20 шт - 2500 руб.</option>
+							<option value="25">25 шт - 3500 руб.</option>
+						</select>
+					</div>
+
+
+					<div class="card__form-item">
+						<label for="color-select">Цвет</label>
+						<select name="color" id="color-select">
+							<option value="">Фиолетовый</option>
+							<option value="red">Красный</option>
+							<option value="white">Белый</option>
+						</select>
+					</div>
+
+
+					<div class="card__form-item">
+						<label for="decor-select">Оформление</label>
+						<select name="decor" id="decor-select">
+							<option value="">Прозрачная упаковка - 0р.</option>
+							<option value="100">Цветная упаковка - 100р.</option>
+						</select>
+					</div>
+
+
+					<button class="btn" type="button">Добавить в корзину</button>
+				</form>
+
+				<div class="card__info">
+					<span>Рекомендуем соблюдать правила ухода за цветами:</span>
+					<ol class="card__list">
+						<li class="card__item">
+							Сделайте косой срез стеблей, под углом, примерно, 45 градусов, на 2-3 см острым ножом или секатором. Такой срез значительно увеличит поверхность для адсорбции воды растением.
+						</li>
+						<li class="card__item">
+							Обновляйте косой срез стеблей при каждой смене воды, которая должна проводится ежедневно, если не используется специальная подкормка для срезанных цветов. Мойте вазу с
+							антибактериальным моющим
+							средством при каждой смене воды.
+						</li>
+						<li class="card__item">
+							Наполните вазу чистой прохладной водой таким образом, чтобы примерно 1/3 часть стеблей оказалась в воде. Если листья попадают в воду, то их необходимо удалить, т.к. они
+							способствуют загниванию воды,
+							и, соответственно, увяданию цветов. Можно использовать специальную подкормку для срезанных цветов. Не добавляйте в воду сахар или другие вещества, это может привести к размножению
+							бактерий, и порче
+							цветов.
+						</li>
+						<li class="card__item">
+							Выберете наиболее удачное место для расположения вазы с цветами или композиции. Идеальное место- прохладное, с притоком свежего воздуха, вдали от прямых солнечных лучей,
+							сквозняков, обогревательных
+							приборов, фруктов и овощей.
+						</li>
+						<li class="card__item">
+							Следите за количеством воды в вазе, многие цветы, например, тюльпаны и пионы, потребляют ее в больших объемах.
+						</li>
+						<li class="card__item">
+							Подливайте воду в центр цветочной композиции раз в 1-2 дня по мере высыхания флористической губки.
+						</li>
+						<li class="card__item">
+							При наличии в букете цветов на флористических удлинителях, необходимо подливать воду в колбу, по мере выпивания ее цветком.
+						</li>
+						<li class="card__item">
+							Не оставлять букет без воды на время, более 15 минут.
+						</li>
+						<li class="card__item">
+							Не оставлять букеты и композиции в автомобиле с неработающим двигателем на длительное время, в особенности, в жаркое и холодное время года.
+						</li>
+						<li class="card__item">
+							Не переносить букеты и композиции по улице без утепления при температуре ниже +2 градусов.
+						</li>
+						<li class="card__item">
+							Декоративные элементы на деревянных удлинителях и короткие ветки зелени в букете не требуют специального ухода и водного питания.
+						</li>
+					</ol>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="reviews">
+		<div class="container">
+			<div class="reviews__top">
+				<h2 class="reviews__title">Отзывы <span>(3)</span></h2>
+				<div class="star" data-rateyo-rating="4"></div>
+				<button class="reviews__btn" type="button">Написать отзыв</button>
+			</div>
+		</div>
+
+		<div class="container container--reviews">
+			<div class="reviews__slider">
+				<div class="reviews-swiper">
+					<ul class="reviews-swiper__wrapper swiper-wrapper">
+						<li class="reviews-swiper__slide swiper-slide">
+
+							<h3 class="reviews-swiper__name">Алексей</h3>
+
+							<p class="reviews-swiper__text">
+								Выберете наиболее удачное место для расположения вазы с цветами или композиции. Идеальное место- прохладное, с притоком есто- прохладное, с прит свежего воздуха, вдали от
+								прямых солнечных
+								лучей,
+								сквозняков,
+								обогревательных приборов, фруктов и овощей.
+							</p>
+
+						</li>
+						<li class="reviews-swiper__slide swiper-slide">
+
+							<h3 class="reviews-swiper__name">Алексей</h3>
+
+							<p class="reviews-swiper__text">
+								Выберете наиболее удачное место для расположения вазы с цветами или композиции. Идеальное место- прохладное, с притоком есто- прохладное, с прит свежего воздуха, вдали от
+								прямых солнечных
+								лучей,
+								сквозняков,
+								обогревательных приборов, фруктов и овощей.
+							</p>
+
+						</li>
+						<li class="reviews-swiper__slide swiper-slide">
+
+							<h3 class="reviews-swiper__name">Алексей</h3>
+
+							<p class="reviews-swiper__text">
+								Выберете наиболее удачное место для расположения вазы с цветами или композиции. Идеальное место- прохладное, с притоком есто- прохладное, с прит свежего воздуха, вдали от
+								прямых солнечных
+								лучей,
+								сквозняков,
+								обогревательных приборов, фруктов и овощей.
+							</p>
+
+						</li>
+					</ul>
+				</div>
+
+				<div class="reviews-swiper__nav">
+					<div class="swiper-button-prev reviews-swiper__prev"></div>
+					<div class="swiper-button-next reviews-swiper__next"></div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div class="discount">
+		<div class="container">
+			<h2 class="title">
+				<span>С этим товаром покупают:</span>
+			</h2>
+			<div class="discount__slider">
+
+				<div class="discount-swiper swiper">
+
+					<ul class="discount-swiper__wrapper swiper-wrapper">
+
+						<li class="discount-swiper__slide swiper-slide">
+
+							<article class="product-card">
+								<div class="product-card__top">
+									<a class="product-card__link" href="flowers.html">
+										<img src="images/discount/flowers.jpg" alt="Изображение цветов">
+									</a>
+									<h3 class="product-card__title">
+										Корзинка роз
+									</h3>
+								</div>
+
+								<div class="product-card__bottom">
+									<div class="product-card__price">
+										<span>150 <span class="product-card__cur">₽</span></span>
+
+										<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+									</div>
+									<button class="btn" type="button" data-micromodal-open="modal-1">В корзину</button>
+								</div>
+							</article>
+
+						</li>
+						<li class="discount-swiper__slide swiper-slide">
+
+							<article class="product-card">
+								<div class="product-card__top">
+									<a class="product-card__link" href="flowers.html">
+										<img src="images/discount/flowers.jpg" alt="Изображение цветов">
+									</a>
+									<h3 class="product-card__title">
+										Корзинка роз
+									</h3>
+								</div>
+
+								<div class="product-card__bottom">
+									<div class="product-card__price">
+										<span>150 <span class="product-card__cur">₽</span></span>
+
+										<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+									</div>
+									<button class="btn" type="button" data-micromodal-open="modal-1">В корзину</button>
+								</div>
+							</article>
+
+						</li>
+						<li class="discount-swiper__slide swiper-slide">
+
+							<article class="product-card">
+								<div class="product-card__top">
+									<a class="product-card__link" href="flowers.html">
+										<img src="images/discount/flowers.jpg" alt="Изображение цветов">
+									</a>
+									<h3 class="product-card__title">
+										Корзинка роз
+									</h3>
+								</div>
+
+								<div class="product-card__bottom">
+									<div class="product-card__price">
+										<span>150 <span class="product-card__cur">₽</span></span>
+
+										<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+									</div>
+									<button class="btn" type="button" data-micromodal-open="modal-1">В корзину</button>
+								</div>
+							</article>
+
+						</li>
+						<li class="discount-swiper__slide swiper-slide">
+
+							<article class="product-card">
+								<div class="product-card__top">
+									<a class="product-card__link" href="flowers.html">
+										<img src="images/discount/flowers.jpg" alt="Изображение цветов">
+									</a>
+									<h3 class="product-card__title">
+										Корзинка роз
+									</h3>
+								</div>
+
+								<div class="product-card__bottom">
+									<div class="product-card__price">
+										<span>150 <span class="product-card__cur">₽</span></span>
+
+										<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+									</div>
+									<button class="btn" type="button" data-micromodal-open="modal-1">В корзину</button>
+								</div>
+							</article>
+
+						</li>
+						<li class="discount-swiper__slide swiper-slide">
+
+							<article class="product-card">
+								<div class="product-card__top">
+									<a class="product-card__link" href="flowers.html">
+										<img src="images/discount/flowers.jpg" alt="Изображение цветов">
+									</a>
+									<h3 class="product-card__title">
+										Корзинка роз
+									</h3>
+								</div>
+
+								<div class="product-card__bottom">
+									<div class="product-card__price">
+										<span>150 <span class="product-card__cur">₽</span></span>
+
+										<span class="product-card__discount">190 <span class="product-card__cur">₽</span></span>
+									</div>
+									<button class="btn" type="button" data-micromodal-open="modal-1">В корзину</button>
+								</div>
+							</article>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+				<div class="discount-swiper__nav">
+					<div class="swiper-button-prev discount-swiper__prev"></div>
+					<div class="swiper-button-next discount-swiper__next"></div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+		</main>
+
+		<footer class="footer">
+	<div class="container">
+		<ul class="footer__list">
+
+			<li class="footer__item">
+				<h2 class="footer__title">Информация</h2>
+
+				<ul class="footer__item-list">
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">О нас</a>
+					</li>
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">Доставка</a>
+					</li>
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">Политика безопасности</a>
+					</li>
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">Условия соглашения</a>
+					</li>
+				</ul>
+			</li>
+			<li class="footer__item">
+				<h2 class="footer__title">Каталог</h2>
+
+				<ul class="footer__item-list">
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">Цветы</a>
+					</li>
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">Подарки</a>
+					</li>
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">Фруктовые корзины</a>
+					</li>
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">Воздушные шарики</a>
+					</li>
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">Комнатные растения</a>
+					</li>
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">Сладости</a>
+					</li>
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">Услуги</a>
+					</li>
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">Аксессуары</a>
+					</li>
+				</ul>
+			</li>
+			<li class="footer__item">
+				<h2 class="footer__title">Личный кабинет</h2>
+
+				<ul class="footer__item-list">
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">Личный кабинет</a>
+					</li>
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">Корзина</a>
+					</li>
+				</ul>
+			</li>
+			<li class="footer__item">
+				<h2 class="footer__title">Адрес</h2>
+
+				<ul class="footer__item-list">
+					<li class="footer__items">
+						г. Москва
+					</li>
+				</ul>
+			</li>
+			<li class="footer__item">
+				<h2 class="footer__title">Телефоны</h2>
+
+				<ul class="footer__item-list">
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">+7 968 765-70-07</a>
+					</li>
+					<li class="footer__items">
+						<a class="footer__items-link" href="#">+7 925 965-70-07</a>
+					</li>
+				</ul>
+
+				<ul class="footer__item-list">
+					<li class="footer__item">
+						<h2 class="footer__title footer__title--gap">По любым вопросам</h2>
+
+						<ul class="footer__item-list">
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">info@floristman.ru</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+
+
+		</ul>
+
+		<!-- Accordion -->
+		<ul class="accordion">
+			<li class="accordion__item">
+				<div class="accordion__item-trigger">
+					<div class="trigger__text">Информация</div>
+					<div class="trigger__img">
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</div>
+				</div>
+				<div class="accordion__item-content">
+					<div class="content__text">
+						<ul class="footer__item-list">
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">О нас</a>
+							</li>
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">Доставка</a>
+							</li>
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">Политика безопасности</a>
+							</li>
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">Условия соглашения</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+
+			<li class="accordion__item">
+				<div class="accordion__item-trigger">
+					<div class="trigger__text">Каталог</div>
+					<div class="trigger__img">
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</div>
+				</div>
+				<div class="accordion__item-content">
+					<div class="content__text">
+						<ul class="footer__item-list">
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">Цветы</a>
+							</li>
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">Подарки</a>
+							</li>
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">Фруктовые корзины</a>
+							</li>
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">Воздушные шарики</a>
+							</li>
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">Комнатные растения</a>
+							</li>
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">Сладости</a>
+							</li>
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">Услуги</a>
+							</li>
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">Аксессуары</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+
+			<li class="accordion__item">
+				<div class="accordion__item-trigger">
+					<div class="trigger__text">Личный кабинет</div>
+					<div class="trigger__img">
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</div>
+				</div>
+				<div class="accordion__item-content">
+					<div class="content__text">
+						<ul class="footer__item-list">
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">Личный кабинет</a>
+							</li>
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">Корзина</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+
+			<li class="accordion__item">
+				<div class="accordion__item-trigger">
+					<div class="trigger__text">Контакты</div>
+					<div class="trigger__img">
+						<span class="line1"></span>
+						<span class="line2"></span>
+					</div>
+				</div>
+				<div class="accordion__item-content">
+					<div class="content__text">
+						<ul class="footer__item-list">
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">+7 968 765-70-07</a>
+							</li>
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">+7 925 965-70-07</a>
+							</li>
+						</ul>
+						<ul class="footer__item-list">
+							<li class="footer__items">
+								<a class="footer__items-link" href="#">info@floristman.ru</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+
+		<div class="footer__inner">
+			<ul class="footer__pay">
+				<li class="footer__pay-item">
+					<img src="images/icons/apple-pay.svg" alt="Изображение оплаты">
+				</li>
+				<li class="footer__pay-item">
+					<img src="images/icons/g-pay.svg" alt="Изображение оплаты">
+				</li>
+				<li class="footer__pay-item">
+					<img src="images/icons/mastercard.svg" alt="Изображение оплаты">
+				</li>
+				<li class="footer__pay-item">
+					<img src="images/icons/mir.svg" alt="Изображение оплаты">
+				</li>
+				<li class="footer__pay-item">
+					<img src="images/icons/paypal.svg" alt="Изображение оплаты">
+				</li>
+				<li class="footer__pay-item">
+					<img src="images/icons/qiwi.svg" alt="Изображение оплаты">
+				</li>
+				<li class="footer__pay-item">
+					<img src="images/icons/pay.svg" alt="Изображение оплаты">
+				</li>
+				<li class="footer__pay-item">
+					<img src="images/icons/sber.svg" alt="Изображение оплаты">
+				</li>
+				<li class="footer__pay-item">
+					<img src="images/icons/visa.svg" alt="Изображение оплаты">
+				</li>
+				<li class="footer__pay-item">
+					<img src="images/icons/webmoney.svg" alt="Изображение оплаты">
+				</li>
+			</ul>
+
+			<ul class="footer__soc">
+				<li class="footer__soc-item">
+					<a class="footer__soc-link" href="#">
+						<img src="images/icons/icon-youtube.svg" alt="иконка соц сетей">
+					</a>
+				</li>
+				<li class="footer__soc-item">
+					<a class="footer__soc-link" href="#">
+						<img src="images/icons/icon-watsapp.svg" alt="иконка соц сетей">
+					</a>
+				</li>
+				<li class="footer__soc-item">
+					<a class="footer__soc-link" href="#">
+						<img src="images/icons/icon-telegram.svg" alt="иконка соц сетей">
+					</a>
+				</li>
+				<li class="footer__soc-item">
+					<a class="footer__soc-link" href="#">
+						<img src="images/icons/icon-inst.svg" alt="иконка соц сетей">
+					</a>
+				</li>
+				<li class="footer__soc-item">
+					<a class="footer__soc-link" href="#">
+						<img src="images/icons/icon-tiktok.svg" alt="иконка соц сетей">
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer__copy">
+			<p>FloristMan © 2022</p>
+		</div>
+	</div>
+</footer>
+	</div>
+
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
